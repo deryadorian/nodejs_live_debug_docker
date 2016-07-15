@@ -1,0 +1,25 @@
+{
+  "services": {
+    "web": {
+      "Args": [
+        "nodemon", 
+        "--debug=5858"
+      ], 
+      "Image": "funkydorian/nodejs_web@sha256:17372cc40e3530e3f23a25b9a03f2bcb52cd882ffbc523004c9aa589277ceb88", 
+      "Networks": [
+        "default"
+      ], 
+      "Ports": [
+        {
+          "Port": 8000, 
+          "Protocol": "tcp"
+        }, 
+        {
+          "Port": 5858, 
+          "Protocol": "tcp"
+        }
+      ]
+    }
+  }, 
+  "version": "0.1"
+}
